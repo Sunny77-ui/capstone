@@ -1,93 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <title>Colors</title>
-  <style>
-    body {
-      background-color: #73C7C7;
-
-    }
-    h1{
-        background-color: #F7CFD8;
-        text-align: center;
-        font-weight: 800;
-        font-family: "Caveat", serif;;
-
-    }
-    
-h2{
-    background-color: #FFACAC;
-        text-align: right;
-        font-weight: 800;
-        font-family: "Caveat", serif;;
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+   <style>
+     /* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-#hr{
-    background-color: black;
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
 }
-    #introduce{
-        text-align:center;
-        font-weight: 800;
-        font-family: "Caveat", serif;;
 
+/* Navigation Bar */
+header {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
 
-    }
-    #CONTACT{
-        background-color: #F7CFD8;
-        text-align: right;
-        font-weight: 800;
-        font-family: "Caveat", serif;;
+header nav ul {
+    list-style-type: none;
+}
 
-    }
-    #foot{
-        background-color:antiquewhite;
-        text-align: center;
-    }
-    
-  </style>
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #E1306C;  /* Instagram pink color */
+}
+
+/* Hero Section */
+#hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    background-color: #E1306C;  /* Instagram pink color */
+    color: white;
+}
+
+#hero .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+}
+
+#hero .hero-text h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+#hero .hero-text p {
+    font-size: 1.5em;
+}
+
+#hero .hero-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+/* About Me Section */
+#about {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+#about h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Projects Section */
+#projects {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+#projects h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.project {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.project h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* Social Media Section */
+#social-media {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#social-media h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 20px;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2em;
+}
+
+.social-icons a img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.social-icons a:hover {
+    color: #E1306C;
+}
+
+.social-icons a p {
+    margin-top: 10px;
+}
+
+/* Contact Section */
+#contact {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#contact ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#contact ul li {
+    margin: 10px 0;
+}
+
+#contact ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2em;
+}
+
+#contact ul li a:hover {
+    color: #E1306C;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+}
+
+   </style>
 </head>
-
 <body>
-  <h1>SUNNY PORTFILO</h1>
-  <img src="./assest/portfilo.jpeg" alt="sunny" width="500" height="300"/>
-  <h2> Something about me</h2>
-  <hr >
-  <ul>
-    <h3>THIS IS MY INSTAGRAM ID  </h3>
-    <a href="https://www.instagram.com/s.kalkhanday77?igsh=MWl2ZWYzYzI2aTc4OQ==" >sunny insta id </a>
-    <img src="./assest/instapic.png" width="500" height="250"/>
-<hr>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#connet">connect with me </a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container">
+            <div class="hero-text">
+                <h1>Sunny kalkhanday</h1>
+                <p>Web Developer | Designer | Creator</p>
+            </div>
+            <div class="hero-image">
+                <img src="IMG_0860.JPG" alt="Your Name">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a web developer passionate about creating interactive and user-friendly websites. I specialize in front-end and back-end development.</p>
+    </section>
 
    
 
-  </ul>
-  <ol>
-    <p id="introduce">Hello! My name is [sunny kalkhanday], and I’m thrilled to have the opportunity to introduce myself. <br>I am a [mention your current role, like a student, professional, etc.]<br> with a strong passion for [mention key interests related to your personal, academic, or professional life].<br>
+    <!-- Social Media Section -->
+    <section id="social-media">
+        <h2>Connect With Me</h2>
+        <div class="social-icons">
+            <!-- Snapchat -->
+            <a href="https://www.snapchat.com/add/s.kalkhanday77?share_id=q3846uRGsOI&locale=en-IN" target="_blank">
+                <img src="image copy.png" alt="Snapchat">
+                <p>Snapchat</p>
+            </a>
 
-        I grew up in [Your Location or Hometown], where I developed a deep interest in [mention any relevant field, hobby, or interest, like technology, literature, or environmental science].<br> My academic background is in [mention your field of study or area of expertise], which I pursued because of my natural curiosity and drive to understand how things work.<br> I graduated from [Your School/University] and have gained skills in [mention relevant skills], which I’m excited to put to use as I grow in my career.<br>
-        
-        Professionally, I have experience in [mention relevant experience or industry, like customer service, project management, etc.]<br> where I learned the importance of [mention any relevant qualities, like teamwork, attention to detail, or communication].<br> One of my strengths is my ability to [mention a skill or quality, like problem-solving or adapting to new challenges], which I believe will contribute to my success in any role.<br>
-        
-        On a personal level, I enjoy [mention hobbies or interests, like reading, hiking, painting, etc.]. These activities help me stay balanced and bring a fresh perspective to my work and daily life. I’m always eager to learn new things, meet new people, and embrace challenges that push me out of my comfort zone.<br>
-        
-        Thank you for taking the time to get to know me. <br>I’m looking forward to connecting with like-minded individuals and exploring opportunities where I can contribute meaningfully while continuing my personal and professional growth.<br>
-        
-        30.1K viewsView upvotes<br>
-        </p>
-  </ol>
-  <hr>
-  <ul>
-    <h3 ID="CONTACT"> IF YOU WANT TO CONTACT ME</h3>
-    <a href="./contac.html">contact imfomation</a>
-  </ul>
-  <hr>
-  <footer ID="foot">
-    <p>© 2025 SUNNY KALKHANDAY</p>
-  </footer>
-  
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/s.kalkhanday77?igsh=MWl2ZWYzYzI2aTc4OQ==" target="_blank">
+                <img src="image.png" alt="Instagram">
+                <p>Instagram</p>
+            </a>
 
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/share/12EeKw9YipA/" target="_blank">
+                <img src="face.png" alt="Facebook">
+                <p>Facebook</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Feel free to reach out to me via email or on any of the social platforms above.</p>
+        <ul>
+            <li><a href="jaatregimnet508@gmail.com">Gmail</a></li>
+            <li><a href="https://www.linkedin.com/in/sunny-chaudhary-779881321?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+    </footer>
 </body>
-
 </html>
